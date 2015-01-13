@@ -1,6 +1,7 @@
 # Paste your code into this box 
 
-s = 'bobobob'
+s = 'azcbobobegghakl' # 2
+# s = 'bobobob' # 3
 
 sScan = 'bob'
 count = 0

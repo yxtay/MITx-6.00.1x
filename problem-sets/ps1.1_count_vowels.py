@@ -1,5 +1,7 @@
- # Paste your code into this box 
- 
+# Paste your code into this box 
+
+s = 'azcbobobegghakl' # 5
+
 vowels = 'aeiou'
 count = 0
 for ch in s:

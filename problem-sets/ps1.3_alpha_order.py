@@ -1,6 +1,8 @@
 # Paste your code into this box
 
-s = 'azcbobobegghakl'
+s = 'azcbobobegghakl' # beggh
+# s = 'abcbcd' # abc
+# s = 'abcdefghijklmnopqrstuvwxyz' # abcdefghijklmnopqrstuvwxyz
 
 longest_str = s[0]
 max_length = len(longest_str)
