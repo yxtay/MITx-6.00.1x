@@ -5,19 +5,26 @@ s = 'azcbobobegghakl' # beggh
 # s = 'abcdefghijklmnopqrstuvwxyz' # abcdefghijklmnopqrstuvwxyz
 
 longest_str = s[0]
-max_length = len(longest_str)
+max_length = 1
 
-i = 0
-while i < len(s) - max_length:
-    j = 2
-    current_str = s[i:(i + j)]
-    while current_str[-1] >= current_str[-2] and j <= len(s) - i:
-        j += 1
-        current_str = s[i:(i + j)]
+i = 1
+anchor = i - 1
+while i < len(s):
+    if s[i - 1] <= s[i]:
+        if i - anchor + 1 > len(longest_str):
+            longest_str = s[anchor:i + 1]
+    else:
+        anchor = i
     
-    if j > max_length:
-        max_length = j
-        longest_str = current_str[:j - 1]
+    # j = 2
+    # current_str = s[i:(i + j)]
+    # while current_str[-1] >= current_str[-2] and j <= len(s) - i:
+        # j += 1
+        # current_str = s[i:(i + j)]
+    
+    # if j > max_length:
+        # max_length = j
+        # longest_str = current_str[:j - 1]
         
     i += 1
         
